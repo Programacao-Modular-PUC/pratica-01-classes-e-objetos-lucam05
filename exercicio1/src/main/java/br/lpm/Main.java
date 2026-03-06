@@ -11,8 +11,6 @@ public class Main {
             cateto1 = scanner.nextDouble();
             cateto2 = scanner.nextDouble();
         TrianguloRetangulo triangulo = new TrianguloRetangulo(cateto1, cateto2);
-        triangulo.setCateto1(cateto1);
-        triangulo.setCateto2(cateto2);
         System.out.println("Hipotenusa: " + triangulo.CalcularHipotenusa());
         System.out.println("Área: " + triangulo.CalcularArea());
 
