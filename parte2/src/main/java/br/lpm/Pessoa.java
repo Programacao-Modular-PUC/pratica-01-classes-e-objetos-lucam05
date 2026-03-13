@@ -36,19 +36,19 @@ public class Pessoa {
         imc = peso / (altura*altura);
         return imc;
     }
-    public void InformaObesidade(double imc){
+    public String InformaObesidade(double imc){
         if(imc < 18.5){
-            System.out.println("Abaixo do peso");
+            return "Abaixo do peso";
          } else if(imc >=18.5 && imc < 25){
-            System.out.println("Peso normal");
+            return "Peso normal";
          } else if(imc >= 25 && imc < 30){
-            System.out.println("Sobrepeso");
+            return "Sobrepeso";
          } else if(imc >= 30 && imc < 35){
-            System.out.println("Obesidade grau I");
+            return "Obesidade grau I";
          } else if(imc >= 35 && imc < 40){
-            System.out.println("Obesidade grau II");
+            return "Obesidade grau II";
          } else {
-            System.out.println("Obesidade grau III");
+            return "Obesidade grau III";
          }
     }
     public String getNome() { return nome;}

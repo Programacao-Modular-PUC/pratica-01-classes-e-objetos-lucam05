@@ -50,8 +50,6 @@ public class Main {
         totalCadastrados++;
         
 
-        System.out.println("O IMC de " + p[i].getNome() + " " + p[i].getSobrenome() + " é: " + p[i].getImc());
-        p[i].InformaObesidade(p[i].getImc());
     }
     System.out.println("\n=== RESULTADOS FINAIS ===");
     for(int i = 0; i < totalCadastrados; i++){
@@ -64,6 +62,8 @@ public class Main {
             System.out.println("Peso: " + p[i].getPeso()); 
             System.out.println("Altura: " + p[i].getAltura()); 
             System.out.println("IMC: " + String.format("%.2f", p[i].getImc())); 
+            System.out.println("Classificação: " + p[i].InformaObesidade(p[i].getImc()));
+            System.out.println("-------------------------");
     }
     
 
